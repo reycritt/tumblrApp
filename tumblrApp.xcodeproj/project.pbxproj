@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		9AA587B823E8A48F00EF65AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587B723E8A48F00EF65AA /* AppDelegate.swift */; };
 		9AA587BA23E8A48F00EF65AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587B923E8A48F00EF65AA /* SceneDelegate.swift */; };
-		9AA587BC23E8A48F00EF65AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587BB23E8A48F00EF65AA /* ViewController.swift */; };
 		9AA587BF23E8A48F00EF65AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA587BD23E8A48F00EF65AA /* Main.storyboard */; };
 		9AA587C123E8A49500EF65AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA587C023E8A49500EF65AA /* Assets.xcassets */; };
 		9AA587C423E8A49500EF65AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA587C223E8A49500EF65AA /* LaunchScreen.storyboard */; };
 		9AA587CF23E8A49500EF65AA /* tumblrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587CE23E8A49500EF65AA /* tumblrAppTests.swift */; };
 		9AA587DA23E8A49500EF65AA /* tumblrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587D923E8A49500EF65AA /* tumblrAppUITests.swift */; };
+		9AA587E823E8A4C800EF65AA /* TumblrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587E723E8A4C800EF65AA /* TumblrViewController.swift */; };
+		9AA587EA23E8A56100EF65AA /* TumblrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA587E923E8A56100EF65AA /* TumblrCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		9AA587B423E8A48F00EF65AA /* tumblrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA587B723E8A48F00EF65AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA587B923E8A48F00EF65AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AA587BB23E8A48F00EF65AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AA587BE23E8A48F00EF65AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AA587C023E8A49500EF65AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AA587C323E8A49500EF65AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		9AA587D523E8A49500EF65AA /* tumblrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA587D923E8A49500EF65AA /* tumblrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrAppUITests.swift; sourceTree = "<group>"; };
 		9AA587DB23E8A49500EF65AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA587E723E8A4C800EF65AA /* TumblrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrViewController.swift; sourceTree = "<group>"; };
+		9AA587E923E8A56100EF65AA /* TumblrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		9AA587B623E8A48F00EF65AA /* tumblrApp */ = {
 			isa = PBXGroup;
 			children = (
+				9AA587E723E8A4C800EF65AA /* TumblrViewController.swift */,
+				9AA587E923E8A56100EF65AA /* TumblrCell.swift */,
 				9AA587B723E8A48F00EF65AA /* AppDelegate.swift */,
 				9AA587B923E8A48F00EF65AA /* SceneDelegate.swift */,
-				9AA587BB23E8A48F00EF65AA /* ViewController.swift */,
 				9AA587BD23E8A48F00EF65AA /* Main.storyboard */,
 				9AA587C023E8A49500EF65AA /* Assets.xcassets */,
 				9AA587C223E8A49500EF65AA /* LaunchScreen.storyboard */,
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA587BC23E8A48F00EF65AA /* ViewController.swift in Sources */,
 				9AA587B823E8A48F00EF65AA /* AppDelegate.swift in Sources */,
+				9AA587EA23E8A56100EF65AA /* TumblrCell.swift in Sources */,
 				9AA587BA23E8A48F00EF65AA /* SceneDelegate.swift in Sources */,
+				9AA587E823E8A4C800EF65AA /* TumblrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
