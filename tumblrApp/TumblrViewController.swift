@@ -50,9 +50,14 @@ class TumblrViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {//The cell to be displayed; can be used as a template for multiple rows
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! TumblrCell//Saves space by recycling existing, unused cells; "as!" casts to MovieCell, allowing the UI file to be used
         
-        let movie = posts[indexPath.row]//A movie will be set as a movie from movies dictionary based on the row number
-        let title = movie["title"] as! String//Casts the dictionary key "title" as a String, calling the key's value into a String
-        let synopsis = movie["overview"] as! String
+        let post = posts[indexPath.row]//A movie will be set as a movie from movies dictionary based on the row number
+        if let photos = post["photos"] as? [[String: Any]] {
+             // photos is NOT nil, we can use it!
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            let URLstring = originalSize["url"] as! String
+            let url = URL(string: URLstring)
+        }
         
         
         return cell
